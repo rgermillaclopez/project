@@ -6,6 +6,7 @@
   --gradient: linear-gradient(90deg, var(--purple), var(--pink));
 }
 
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -14,7 +15,7 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 *::selection {
@@ -62,37 +63,31 @@ section {
   -webkit-background-clip: text;
   background-clip: text;
   font-size: 3.5rem;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 1rem;
 }
 
 header {
-  position: absolute; 
-	top: 60px; /* the height of the main nav */
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
   padding: 2rem 9%;
   display: flex;
-  align-items:inherit;
+  align-items: center;
   justify-content: space-between;
   z-index: 1000;
 }
 
 header .logo {
-  font-size: 25rem;
-  color: whitesmoke;
-  margin: -10%;
-  top: -20px;
+  font-size: 2rem;
+  margin-left: 0;
 }
 
-header .logo span {
-  color: var(--pink);
-}
 
 header .navbar a {
-  font-size: 3rem;
-  margin-left: 6rem;
-  align-items:inherit;  
+  font-size: 1.7rem;
+  margin-left: 2rem;
   color: white;
   overflow: hidden;
 }
@@ -140,12 +135,12 @@ header label {
 .home .content h3 {
   font-size: 3rem;
   color: rgb(255, 255, 255);
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .home .content h3 span {
   color: white;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .home .content p {
@@ -242,7 +237,7 @@ header label {
 .newsletter h3 {
   color: #fff;
   font-size: 3rem;
-  text-transform: uppercase;
+  text-transform: normal;
 }
 
 .newsletter p {
